@@ -62,7 +62,7 @@ public class NewTripDetails {
                 database.getReference("Dealers").child("Support Team").child("Trips").setValue("dream"+value);
 
                 for(int i=0;i<places.size();i++){
-                    database.getReference("Trip Search").child(places.get(i)).child(duration+" Day").setValue("dream"+value);
+                    database.getReference("Trip Search").child(places.get(i)).child(duration+" Day").child("dream"+value).setValue(true);
                 }
 
             }

@@ -1,5 +1,7 @@
 package com.example.jgirish.traveladminapp;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
@@ -21,6 +23,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 
+import android.view.Window;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
@@ -46,7 +49,10 @@ public class IternaryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_iternary);
 
-
+        Window window= getWindow();
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            window.setStatusBarColor(getResources().getColor(R.color.colorPrimary));
+        }
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -88,6 +94,9 @@ public class IternaryActivity extends AppCompatActivity {
                 break;
             case R.id.done:
                 NewTripDetails.sendDataToFireBase();
+                Intent intent=new Intent(getApplicationContext(),home.class);
+                startActivity(intent);
+                finish();
         }
 
         return super.onOptionsItemSelected(item);

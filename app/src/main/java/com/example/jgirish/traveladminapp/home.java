@@ -54,8 +54,6 @@ public class home extends AppCompatActivity
         nav_Email.setText("girish@snu.edu.in");
         navigationView.setNavigationItemSelectedListener(this);
         toolbar.setNavigationIcon(R.drawable.nav_bar_icon);
-<<<<<<< HEAD
-=======
         toolbar.setTitle("Dashboard");
         GraphView graph = (GraphView) findViewById(R.id.graph);
         LineGraphSeries<DataPoint> series = new LineGraphSeries<>(new DataPoint[] {
@@ -98,7 +96,6 @@ public class home extends AppCompatActivity
 
 
 
->>>>>>> 531615a05d4a141366be203e0aa2abcaaf5988c4
     }
 
     @Override
@@ -147,7 +144,8 @@ public class home extends AppCompatActivity
             Intent intent=new Intent(this,AccountActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_slideshow) {
-
+            Intent intent=new Intent(this,AddTripActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {

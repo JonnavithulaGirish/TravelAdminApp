@@ -22,14 +22,9 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.android.support:appcompat-v7:27.1.1'
     implementation 'com.android.support.constraint:constraint-layout:1.1.0'
-<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-database:11.8.0'
-    implementation 'com.android.support:design:26.1.0'
-=======
-    implementation 'com.google.firebase:firebase-database:11.0.4'
     implementation 'com.android.support:design:27.1.1'
     implementation 'com.jjoe64:graphview:4.2.2'
->>>>>>> 531615a05d4a141366be203e0aa2abcaaf5988c4
     testImplementation 'junit:junit:4.12'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
@@ -39,10 +34,7 @@ dependencies {
 
 
 
-<<<<<<< HEAD
 apply plugin: 'com.google.gms.google-services'
-=======
 
 
 apply plugin: 'com.google.gms.google-services'
->>>>>>> 531615a05d4a141366be203e0aa2abcaaf5988c4

@@ -17,11 +17,8 @@
         <activity
             android:name=".home"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity
-            android:name=".AddTripActivity"
-            android:label="@string/title_activity_add_trip"
             android:theme="@style/AppTheme.NoActionBar">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +26,17 @@
             </intent-filter>
         </activity>
         <activity
-<<<<<<< HEAD
+            android:name=".AddTripActivity"
+            android:label="@string/title_activity_add_trip"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
             android:name=".IternaryActivity"
             android:label="@string/title_activity_iternary"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-=======
+
+        <activity
             android:name=".BookingsActivity"
             android:label="@string/title_activity_bookings"
             android:theme="@style/AppTheme.NoActionBar" />
@@ -42,7 +45,6 @@
             android:theme="@style/AppTheme.NoActionBar">
 
         </activity>
->>>>>>> 531615a05d4a141366be203e0aa2abcaaf5988c4
     </application>
 
 </manifest>
