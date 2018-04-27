@@ -15,6 +15,22 @@
       },
       "oauth_client": [
         {
+          "client_id": "676454430694-mnnvoci3tl8apb4flaptlnlp7376nfbi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jgirish.traveladminapp",
+            "certificate_hash": "de9b42aab1f79b22beeda1e32bac74020432cde1"
+          }
+        },
+        {
+          "client_id": "676454430694-8jo5oe6nuesl54d39qtegfeqvsr0gu4k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.jgirish.traveladminapp",
+            "certificate_hash": "3d11629318b4b6a89e72ae4695b61ea8810aa64f"
+          }
+        },
+        {
           "client_id": "676454430694-mo11k5s7bf1ea9agbsutpppadfjimpvh.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -58,6 +74,30 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "676454430694-idnsk1s94vqg3fvlulj856cq35345v49.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "2b3b01a9058d7366e11142dd89c22972673fde84"
+          }
+        },
+        {
+          "client_id": "676454430694-0eh0q4q0utecbe140uo4n81ivurkpbun.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "585975fb1b824115a847523e4ae3af2e803bae25"
+          }
+        },
+        {
+          "client_id": "676454430694-70asle60cpgkab8lp6jat8sog8p5k8v2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.me.travelapp",
+            "certificate_hash": "3d11629318b4b6a89e72ae4695b61ea8810aa64f"
+          }
+        },
         {
           "client_id": "676454430694-c8tgdrnh19p2647cua24bsf2vvfu4btm.apps.googleusercontent.com",
           "client_type": 1,

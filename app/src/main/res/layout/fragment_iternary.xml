@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IternaryActivity$PlaceholderFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/section_label"
+        android:visibility="gone"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hotels"
+                    android:textSize="15dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/hotelText"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/hotelText"
+                    android:layout_marginHorizontal="25dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.example.jgirish.traveladminapp.Utils.NonScrollListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/hotelList"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="10sp"
+                        ></com.example.jgirish.traveladminapp.Utils.NonScrollListView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginVertical="4dp"
+                        android:id="@+id/hotelLayout"
+                        android:background="@drawable/add_button_bg"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:textCursorDrawable="@null"
+                            android:hint="Add hotel"
+                            android:id="@+id/newHotel"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Hotel"
+                            android:id="@+id/addHotel"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+<!--Hotel Done -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Iternary"
+                    android:textSize="15dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/iternaryText"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/iternaryText"
+                    android:layout_marginHorizontal="25dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.example.jgirish.traveladminapp.Utils.NonScrollListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/iternaryList"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="10sp"
+                        ></com.example.jgirish.traveladminapp.Utils.NonScrollListView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/add_button_bg"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:textCursorDrawable="@null"
+                            android:hint="Add iternary"
+                            android:id="@+id/newIternary"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Iternary"
+                            android:id="@+id/addIternary"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Places  "
+                    android:textSize="15dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/placesTextView"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/placesTextView"
+                    android:layout_marginHorizontal="25dp"
+                    android:orientation="vertical"
+                    >
+
+                    <com.example.jgirish.traveladminapp.Utils.NonScrollListView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="10dp"
+                        android:id="@+id/placesListIternary"
+                        android:divider="@android:color/transparent"
+                        android:dividerHeight="10sp"
+                        ></com.example.jgirish.traveladminapp.Utils.NonScrollListView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/activity_horizontal_margin"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/add_button_bg"
+                        >
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                            android:textCursorDrawable="@null"
+                            android:hint="Add Place"
+                            android:id="@+id/newPlaceIternary"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@android:color/darker_gray"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add Place"
+                            android:id="@+id/addPlaceIternary"
+                            />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

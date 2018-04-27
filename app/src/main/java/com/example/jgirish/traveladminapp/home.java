@@ -38,9 +38,7 @@ public class home extends AppCompatActivity
         TextView nav_Email=(TextView)hView.findViewById(R.id.U_email);
         nav_Email.setText("girish@snu.edu.in");
         navigationView.setNavigationItemSelectedListener(this);
-
         toolbar.setNavigationIcon(R.drawable.nav_bar_icon);
-
     }
 
     @Override
