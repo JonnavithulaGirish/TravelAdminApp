@@ -2,6 +2,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.jgirish.traveladminapp">
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -25,9 +29,20 @@
             </intent-filter>
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".IternaryActivity"
             android:label="@string/title_activity_iternary"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+=======
+            android:name=".BookingsActivity"
+            android:label="@string/title_activity_bookings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AccountActivity"
+            android:label=".AccountActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+>>>>>>> 531615a05d4a141366be203e0aa2abcaaf5988c4
     </application>
 
 </manifest>

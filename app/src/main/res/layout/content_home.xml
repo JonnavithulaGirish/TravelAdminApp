@@ -1,11 +1,283 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:id="@+id/sv1"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.jgirish.traveladminapp.home"
     tools:showIn="@layout/app_bar_home">
 
-</android.support.constraint.ConstraintLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="420dp"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Des1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingBottom="10sp"
+            android:paddingLeft="15sp"
+            android:paddingTop="10sp"
+            android:text="Business Stats :"
+            android:textAlignment="gravity"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.jjoe64.graphview.GraphView
+            android:id="@+id/graph"
+            android:layout_width="match_parent"
+            android:layout_height="200dip"
+            android:layout_margin="10sp"
+            android:layout_below="@+id/LD2"/>
+
+        <LinearLayout
+            android:id="@+id/LD1"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/Des1"
+            android:layout_alignParentStart="true"
+            android:weightSum="2">
+
+            <RelativeLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".98">
+
+                <ImageView
+                    android:id="@+id/BookingImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15sp"
+                    android:src="@drawable/bookings" />
+
+                <TextView
+                    android:id="@+id/BookingCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/BookingImg"
+                    android:paddingLeft="20sp"
+                    android:text="100"
+                    android:textColor="#8fa6c4"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/BookingCount"
+                    android:layout_toRightOf="@id/BookingImg"
+                    android:paddingLeft="20sp"
+                    android:text="Bookings"
+
+                    android:textColor="#8fa6c4" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="1sp"
+                android:layout_height="match_parent"
+                android:background="#c7c7c2" />
+
+            <RelativeLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight=".98">
+
+                <ImageView
+                    android:id="@+id/LikeImg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingLeft="15sp"
+                    android:src="@drawable/like" />
+
+
+                <TextView
+                    android:id="@+id/LikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_toRightOf="@id/LikeImg"
+                    android:paddingLeft="20sp"
+                    android:text="300"
+                    android:textColor="#f55c99"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/LikeCount"
+                    android:layout_toRightOf="@id/LikeImg"
+                    android:paddingLeft="20sp"
+                    android:text="Likes"
+                    android:textColor="#f55c99" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1sp"
+            android:layout_below="@+id/LD1"
+            android:background="#c7c7c2"
+            android:layout_marginLeft="10sp"
+            android:layout_marginRight="10sp"/>
+
+
+          <LinearLayout
+              android:id="@+id/LD2"
+              android:layout_width="match_parent"
+              android:layout_height="75dp"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true"
+              android:layout_below="@+id/LD1"
+              android:weightSum="2">
+
+              <RelativeLayout
+                  android:layout_width="0sp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".98">
+
+                  <ImageView
+                      android:id="@+id/CommentsImg"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:paddingLeft="15sp"
+                      android:src="@drawable/comment" />
+
+                  <TextView
+                      android:id="@+id/CommentsCount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:layout_toRightOf="@id/CommentsImg"
+                      android:paddingLeft="20sp"
+                      android:text="30"
+                      android:textColor="#adb398"
+                      android:textSize="20sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/CommentsCount"
+                      android:layout_toRightOf="@+id/CommentsImg"
+                      android:paddingLeft="20sp"
+                      android:text="Comments"
+                      android:textColor="#adb398" />
+              </RelativeLayout>
+
+
+              <View
+                  android:layout_width="1sp"
+                  android:layout_height="match_parent"
+                  android:background="#c7c7c2" />
+
+              <RelativeLayout
+                  android:layout_width="0sp"
+                  android:layout_height="match_parent"
+                  android:layout_weight=".98">
+
+                  <ImageView
+                      android:id="@+id/RatingImg"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerVertical="true"
+                      android:paddingLeft="15sp"
+                      android:src="@drawable/rating" />
+
+
+                  <TextView
+                      android:id="@+id/RatingCount"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                      android:layout_toRightOf="@id/RatingImg"
+                      android:paddingLeft="20sp"
+                      android:text="3.6"
+                      android:textColor="#b8d745"
+                      android:textSize="20sp" />
+
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_below="@id/RatingCount"
+                      android:layout_toRightOf="@id/RatingImg"
+                      android:paddingLeft="20sp"
+                      android:text="Rating"
+                      android:textColor="#b8d745" />
+              </RelativeLayout>
+
+
+          </LinearLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+
+ <View
+     android:layout_width="match_parent"
+     android:layout_height="1sp"
+     android:background="#dfd8d8"/>
+ <android.support.v7.widget.CardView
+     android:layout_width="match_parent"
+     android:layout_height="275sp"
+     android:layout_margin="10sp">
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+     <TextView
+         android:id="@+id/dealReqText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Deal Request:"
+         android:textAlignment="gravity"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:paddingTop="10sp"
+         android:gravity="center_vertical"
+         android:paddingBottom="10sp"
+         android:paddingLeft="15sp"          
+         />
+
+          <android.support.v7.widget.RecyclerView
+              android:id="@+id/dealRequest"
+              android:layout_below="@id/dealReqText"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              />
+           <Button
+               android:id="@+id/dealReqViewAll"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="View All"
+               android:textAllCaps="false"
+               android:background="@android:color/transparent"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentRight="true"/>
+     </RelativeLayout>
+
+ </android.support.v7.widget.CardView>
+
+
+ </LinearLayout>
+</ScrollView>
