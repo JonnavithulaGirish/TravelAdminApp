@@ -1,0 +1,165 @@
+<android.support.v7.widget.CardView
+    android:id="@+id/ly_root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFEFE"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/tripImage"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/lol" />
+
+            <ImageView
+                android:id="@+id/ratingImage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/stars" />
+
+
+            <TextView
+                android:id="@+id/Reviews"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="46 Reviews"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+
+                android:text="Trip to manali"
+                android:textSize="30sp"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/views"
+                    android:textStyle="normal"
+                    android:text="35 views"
+                    android:textColor="#ffbf00"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/review"
+                    android:textStyle="normal"
+                    android:text="46 Reviews"
+                    android:textColor="#ffbf00"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:layout_weight="2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/enquiry"
+                    android:textStyle="normal"
+                    android:text="10 enquiry"
+                    android:textColor="#ffbf00"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/boookings"
+                    android:textStyle="normal"
+                    android:text="20 bookings"
+                    android:textColor="#ffbf00"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/darker_gray"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:textStyle="normal"
+                    android:text="Total Cost:"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/cost"
+                    android:textStyle="normal"
+                    android:text="Rs:5000"
+                    android:gravity="center"
+                    android:textColor="#ffbf00"
+                    android:layout_weight="1"
+                    android:textSize="20sp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
